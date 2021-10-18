@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<!-- Copyright (C) 2021  Iván Molina Rebolledo
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>. -->
+<HEAD>
+<TITLE>{{_0.settings.title}}</TITLE>
+</HEAD><BODY BGCOLOR="#E6E6FA">
+<CENTER><FONT FACE="COMIC SANS MS">
+    <H2>WELCOME TO</BR>
+    <FONT COLOR="PURPLE">I</FONT>
+    <FONT COLOR="GREEN">V</FONT>
+    <FONT COLOR="BLUE">A</FONT>
+    <FONT COLOR="RED">N</FONT>
+    <FONT COLOR="AQUA">'</FONT>
+    <FONT COLOR="MAROON">S</FONT>
+    </BR>WEBSITE:</H2>
+    <H1>{{_0.settings.title}}</H1>
+</FONT></CENTER>
+
+<TABLE border="5" cellspacing="3" celpadding="12" align="center">
+<TBODY><TR>
+<TD><A HREF="/">HOME</A></TD>
+<TD><A HREF="https://www.vatican.va/archive/bible/nova_vulgata/documents/nova-vulgata_index_lt.html">NOVA VULGATA</A></TD>
+<TD><A HREF="https://ivmoreau.com/">MODERN WEBSITE</A></TD>
+</TR>
+</TBODY></TABLE>
+
+<HR></HR>
+<CENTER><FONT FACE="COMIC SANS MS" COLOR="RED">
+    <BLINK>
+    <MARQUEE>
+        ¡¡¡¡¡UNDER CONSTRUCTION!!!!!!
+    </MARQUEE>
+    </BLINK>
+</FONT></CENTER>
+<HR></HR>
+
+
+
+<BR>
+
+<TABLE border="5" cellspacing="3" celpadding="12" align="center">
+<TBODY><TR>
+
+<TD COLSPAN=3>
+<CENTER>
+    <FONT FACE="COMIC SANS MS" COLOR="AQUA">
+    LISTEN TO MUSIC!!!</FONT>
+    <BR>
+    <audio controls="">
+    <source src="https://funjdiaz.net/mp3/canciones/1994devotos004.mp3" type="audio/mpeg">
+    <EMBED SRC="static/a.wav" AUTOSTART=TRUE AUTOPLAY=TRUE LOOP=TRUE HEIGHT=150 WIDTH=144 MASTERSOUND CONTROLS=SMALLCONSOLE>
+    </audio>
+    <BR>
+    <IMG SRC="static/4.gif">
+    <HR>
+    WEBPAGE
+    <BR>
+    <IMG SRC="static/5.gif">
+</CENTER>
+</TD>
+
+</TR>
+<TR>
+
+<TD align="center">
+    <IMG SRC="static/1.gif" HEIGHT=90 WIDTH=90>
+</TD>
+<TD align="center">
+    <IMG SRC="static/2.gif" HEIGHT=140 WIDTH=140>
+</TD>
+<TD align="center">
+    <IMG SRC="static/3.gif" HEIGHT=90 WIDTH=90>
+</TD>
+
+</TR>
+
+<TR>
+<TD COLSPAN=3 ALIGN=CENTER>
+<FONT FACE="COMIC SANS MS" COLOR=#C6F>
+    <H2>ABOUT THIS SITE</H2>
+</FONT>
+<p>{{_0.settings.description}}</p>
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN=3 ALIGN=CENTER>
+<IMG SRC="static/1.jpg" width="500">
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN=3 align="left">
+
+<!-- POSTS -->
+
+<BR>
+
+<TABLE border="5" cellspacing="3" celpadding="12" align="center">
+<TBODY><TR>
+<TD>
+<CENTER><FONT FACE="COMIC SANS MS" COLOR=#CC6>
+    <h3>POSTS!!!</h3>
+</FONT></CENTER>
+
+<UL>
+{{#each _1.posts}}
+    <LI>
+        <A HREF="/post/{{this.slug}}">{{this.title}}</A>: {{this.custom_excerpt}}
+    </LI>
+{{/each}}
+</UL>
+<BR>
+PAGE: {{page}}
+
+{{#if _1.meta.pagination.next}}
+<A HREF="/?page={{npage}}">NEXT</A>
+{{/if}}
+
+{{#if _1.meta.pagination.prev}}
+<A HREF="/?page={{ppage}}">BACK</A>
+{{/if}}
+
+
+</TD>
+</TR>
+</TBODY></TABLE>
+
+<!-- POSTS-END -->
+
+</TD></TR>
+</TBODY></TABLE>
+
+<FONT FACE="COMIC SANS MS">
+    <P>© IVÁN MOLINA REBOLLEDO.</P>
+</FONT>
+</BODY></HTML>

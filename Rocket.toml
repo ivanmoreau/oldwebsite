@@ -1,0 +1,7 @@
+## defaults for _all_ profiles
+[default]
+port = 8009
+
+## set only when compiled in debug mode, i.e, `cargo build`
+[debug]
+port = 8000
